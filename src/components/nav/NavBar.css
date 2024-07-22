@@ -1,0 +1,98 @@
+/*Header*/
+header{
+	width: 100%;
+	height: auto;
+	display: block;
+	position: fixed;
+	z-index: 2;
+	padding: 50px 0 30px 0;
+	box-sizing: border-box;
+	background-color: var(--color-blanco);
+	box-shadow: 0px 0px 14px 1px #f2efea;
+}
+header nav{
+    width: auto;
+    height: auto;
+    display: table;
+    margin: 0px auto;
+	position: relative;
+}
+header nav	ul{
+    width: 100%;
+    display: table;
+    margin: 0px auto;
+}
+header nav	ul li{
+    height: auto;
+    margin: 0px 15px;
+    position: relative;
+    vertical-align: top;
+    display: inline-table;
+}
+header nav	ul li a{
+    width: auto;
+    height: auto;
+    display: block;
+    padding: 10px 15px;	
+}
+header nav	ul li a:hover{
+     color: var(--color-cafe);
+}
+div.movil-menu{
+    display: none;
+}
+	
+
+
+/* css responsive */
+
+@media screen and (max-width:800px){
+	header{
+		padding: 30px 15px 30px;
+	}
+	header nav{
+		width: 100%;
+	}
+	header nav ul{
+		display: none;
+	}
+	header nav div.movil-menu{
+		width: 200px;
+		height: 50px;
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 1fr 2fr;
+	}
+	header nav div.movil-menu div{
+		width: 100%;
+		height: 100%;
+		padding: 5px;
+		display: block;
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+	header nav div.movil-menu div a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	header nav div.movil-menu img{
+		width: 100%;
+    	height: 100%;
+    	object-fit: contain;
+	}
+	header nav ul li{
+		width: 100%;
+		display: block;
+		margin: 0px auto;
+	}
+	header nav ul li a{
+		text-align: center;
+	}
+	header nav ul li.logo{
+		display: none;
+	}
+	main > section.two{
+		height: auto;
+	}
+}

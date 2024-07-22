@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+:root {
+--color-cafe: #93592A;
+ /*variación de cafe*/
+--cafe-hover: #bb7b4e;
+--color-hueso: #F2EFEA;
+--color-blanco: #FFFFFF;
+--texto-color: #606060;
+}
+html,body,#root{
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+  overflow: hidden;
+	position: absolute;
+}
+#root{
+	position: relative;
+	overflow-y: scroll;
+	z-index: 9;
+	/**/
+	max-width: inherit;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: auto;
+}
+/*resetear clases*/
+p,a,strong,span,ul,ol,li,h1,h2,h3,h4{
+	color: var(--texto-color);
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	line-height: normal;
+	text-decoration: none;
+	font-family: "Roboto";
+}
+h1,h2,h3,h4{
+	font-size: xx-large;
+	color: var(--color-cafe);
+	margin: 20px auto;
+}
+.button,button{
+	width: auto;
+	height: auto;
+	display: table;
+	margin: 40px auto 10px;
+	padding: 10px 20px;
+	text-align: center;
+	transition: all 0.2s;
+	color: var(--color-blanco);
+	background-color: var(--color-cafe);
+}
+.button:hover,button:hover{
+  transition: all 0.2s;
+  background-color: var(--cafe-hover);
+}
+.button:is(.btn-price):hover,button:is(.btn-price):hover{
+  background-color: transparent ;
+  color: var(--color-cafe);
+  font-weight: bold;
+  font-size: large;
+}
+button{
+    border: none;
+    outline: none;
+    margin: 20px auto;
+    font-size: x-large;
+}
+/*Background Hueso*/
+.backgroundHueso{
+	background-color: var(--color-hueso);
+}
+
+#GaleriaProductos{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+#GaleriaProductos div{
+	overflow: hidden;
+}
+#GaleriaProductos div img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+#GaleriaProductos .ImgPrincipal { grid-area: 1 / 1 / 5 / 4; }
+#GaleriaProductos .GalleryImg1 { grid-area: 5 / 1 / 6 / 2; }
+#GaleriaProductos .GalleryImg2 { grid-area: 5 / 2 / 6 / 3; }
+#GaleriaProductos .GalleryImg3 { grid-area: 5 / 3 / 6 / 4; }
+
+.MapaContent div.IframeMpas{
+	width: 100%;
+	height: 350px;
+	padding: 20px 0px;
+	box-sizing: border-box;
+}
+.MapaContent iframe{
+	width: 100%;
+	height: 100%;
+}
+
+input,textarea{
+	width: 100%;
+	height: 30px;
+	padding: 5px;
+	outline: none;
+	margin: 5px 0 10px;
+	color: var(--texto-color)texto-colo;
+	font-family: "Roboto";
+	box-sizing: border-box;
+	border: 2px solid var(--color-cafe);
+}
+textarea{
+	resize: none;
+	height: 250px;
+}
+label{
+	font-size: large;
+	color: var(--color-cafe);
+	font-family: "Roboto";
+}
+main{
+	margin-top: 120px;
+	position: relative
+}
+main > section.two{
+	width: 100%;
+	height: 100vh;
+	padding: 30px 15px;
+	box-sizing: border-box;
+	display: grid; 
+	grid-template-columns: 1fr 1fr; 
+	grid-template-rows: 1fr; 
+  	gap: 5px;
+}
+main > section.two > div{
+	height: auto;
+	padding: 20px;
+	box-sizing: border-box;
+	position: relative;
+	vertical-align: top;
+	display: inline-block;
+	overflow: hidden;
+}
+main > section.two > div article{
+	width: 80%;
+	height: auto;
+	display: table;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+section.cards{
+	box-sizing: border-box;
+	padding: 50px 20px 30px;
+}
+section.cards > h2{
+	margin: 10px auto 20px;
+	font-size: xx-large;
+	text-align: center;
+}
+

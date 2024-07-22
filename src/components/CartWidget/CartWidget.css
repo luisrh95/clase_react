@@ -1,0 +1,29 @@
+div.CartWidget{
+    width: auto;
+    max-width: 200px;
+    height: 39px;
+    display: grid;
+    position: absolute;
+    grid-gap: 10px;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr;
+    top: 0px;
+    right: -140px;
+    background-color: var(--color-hueso);
+    padding: 0px 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+div.CartWidget p{
+    display: inherit;
+    align-content: center;
+}
+div.CartWidget p strong{
+    display: contents;
+}
+div.CartWidget img{
+    width: 39px;
+    height: 39px;
+    padding: 2px;
+    box-sizing: border-box;
+}
