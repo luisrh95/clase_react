@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './NavBar.css'
 import logoPage from '../../images/logo.png'
 import CartWidget from '../CartWidget/CartWidget.jsx'
+import { Link } from "react-router-dom"
+
 
 function NavBar(){
 
@@ -15,11 +17,11 @@ function NavBar(){
             <a href="#"><img src={logoPage}/></a>
           </div>
           <ul id="menu">
-            <li><a href="#" title="Nosotros">Nosotros</a></li>
-            <li><a href="./pages/procesos.html" title="Procesos">Procesos</a></li>
-            <li class="logo"><a href="#"><img src={logoPage} title="Home"/></a></li>
-            <li><a href="./pages/producto.html" title="Productos">Productos</a></li>
-            <li><a href="./pages/contacto.html" title="Contactos">Contacto</a></li>
+            <li><Link to="/">Inicio</Link></li>
+            <li><Link to="/procesos/">Procesos</Link></li>
+            <li className="logo"><Link to="/"><img src={logoPage} title="Home"/></Link></li>
+            <li><Link to="/productos/" >Productos</Link></li>
+            <li><Link to="/contacto/">Contacto</Link></li>
           </ul>
           <CartWidget name="Hernán"/>
         </nav>

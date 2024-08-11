@@ -166,3 +166,122 @@ section.cards > h2{
 	text-align: center;
 }
 
+div.image-content{
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0px auto;
+}
+div.image-content img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.3s;
+	object-position: center;
+}
+
+/*secion cards*/
+section.cards{
+	box-sizing: border-box;
+	padding: 50px 20px 30px;
+}
+section.cards > h2{
+	margin: 10px auto 20px;
+	font-size: xx-large;
+	text-align: center;
+}
+section.cards div.container-cards{
+	width: 90%;
+	height: auto;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	justify-content: center;
+	margin: 20px auto;
+}
+section.cards div.container-cards article{
+	width: auto;
+	padding: 25px;
+	text-align: center;
+	position: relative;
+}
+section.cards div.container-cards article div.image{
+	width: 100%;
+	height: 250px;
+	display: block;
+	overflow: hidden;
+}
+section.cards div.container-cards article div.image	img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transition: all 0.3s;
+}
+section.cards div.container-cards article div.image	img:hover{
+	width: 110%;
+	height: 110%;
+}
+section.cards h3{
+	font-size: large;
+	text-align: center;
+	margin: 20px auto;
+}
+section.cards p{
+	text-align: center;
+	line-height: 2;
+}
+
+@media screen and (max-width:1000px){
+	section.cards div.container-cards{
+		grid-gap: 10px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}	
+}
+@media screen and (max-width:850px){
+	
+	main > section.two{
+		grid-template-columns: 1fr; 
+		grid-template-rows: 1fr 1fr; 
+		gap: 5px;
+	}
+	main > section#contacto{
+		height: auto;
+	}
+}
+
+.loader-card {
+	width: 215px;
+	height: 215px;
+	display: block;
+	margin: auto;
+	position: relative;
+	background: var(--color-hueso);
+	box-sizing: border-box;
+  }
+  .loader-card::after {
+	content: '';
+	width: calc(100% - 30px);
+	height: calc(100% - 15px);
+	top: 15px;
+	left: 15px;
+	position: absolute;
+	background-image: linear-gradient(90deg, transparent, var(--cafe-hover) 50%, transparent 100%),
+	 linear-gradient(var(--color-cafe) 100px, transparent 0),
+	 linear-gradient(var(--color-cafe) 16px, transparent 0),
+	 linear-gradient(var(--color-cafe) 50px, transparent 0);
+	background-repeat: no-repeat;
+	background-size: 75px 175px, 100% 100px, 100% 16px, 100% 30px;
+	background-position: -185px 0, center 0, center 115px, center 142px;
+	box-sizing: border-box;
+	animation: cargando 1s linear infinite;
+  }
+  
+  @keyframes cargando {
+	to {
+	  background-position: 185px 0, center 0, center 115px, center 142px;
+	}
+  }
+  

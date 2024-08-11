@@ -21,22 +21,22 @@ const ItemListContainer = ({greeting}) => {
 
   if(cargando){
     return (
-      <h3>cargando...</h3>
+      <span class="loader-card"></span>
     )
   }
   
   return (
-    <main>
+    
 	  <section className="cards backgroundHueso" id="productos">
 		  
 		  <h2>Productos</h2>
 		  
 		  <div className="container-cards">
             <ItemList items={items}/>
-          </div>
+      </div>
 
       </section>
-    </main>
+  
   )
 }
 

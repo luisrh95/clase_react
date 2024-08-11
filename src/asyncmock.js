@@ -33,3 +33,11 @@ export const getProducts = () =>{
         }, 2000);
     })
 }
+
+export const getProducto = (id) => {
+    return new Promise ((res,rej) => {
+        setTimeout(()=> {
+            res(items.find(prod => prod.id === id*1))
+        }, 500)
+    })
+}
