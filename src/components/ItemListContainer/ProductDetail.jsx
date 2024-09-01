@@ -26,7 +26,7 @@ const DetalleItem = ({producto}) => {
        <>   
             <div>
               <div className="image-content">
-                  <img src={imagen} title={nombre} alt={nombre}/>
+                  <img src={`/images/${imagen}`} title={nombre} alt={nombre}/>
               </div>
             </div>
             
