@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
-const ItemButtons = ({id, ComprarItem}) => {
+const ItemButtons = ({id, stock, ComprarItem}) => {
     const [ count, setCount] = useState(1)
-
+    
 
     const sumar = () =>{
-        if(count < 10)
+        if(count < stock)
         setCount(count + 1 )
     }
     const restar = () =>{

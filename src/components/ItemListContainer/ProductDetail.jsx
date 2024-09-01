@@ -7,17 +7,12 @@ const DetalleItem = ({producto}) => {
   
   const {contexto, AddToCart} = useContext(CartContext)
 
-  const {id, nombre, texto, imagen, precio, categoria} = producto
+  const {id, nombre, texto, imagen, precio, categoria,stock} = producto
   
   const ComprarItem = (count) =>{
 
-
     AddToCart({...producto, cantidad: count})
 
-
-
-
-    console.log('Producto añadido al carrito:', producto, 'Cantidad:', count);
   }
 
 
@@ -37,9 +32,9 @@ const DetalleItem = ({producto}) => {
                {texto}<br/><br/>
                <strong>Categoría: </strong>{categoria}<br/>
                <strong>Precio: </strong>$ {precio}<br/>
-               
+               <strong>Stock: </strong> {stock}
              </p>
-             <ItemButtons id={id} ComprarItem={ComprarItem}/>
+             <ItemButtons id={id} stock={stock} ComprarItem={ComprarItem}/>
             </article>
             </div>
         </>            

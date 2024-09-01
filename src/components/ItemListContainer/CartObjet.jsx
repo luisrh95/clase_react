@@ -6,7 +6,12 @@ const CartObjet = ({producto}) => {
     const {eliminarProducto,modificarCantidadItem} = useContext(CartContext)
 
   const incrementarCantidad = () => {
-      modificarCantidadItem(producto.id, producto.cantidad + 1);
+     if(producto.cantidad >= producto.stock){
+
+     }else{
+        modificarCantidadItem(producto.id, producto.cantidad + 1);
+     }
+     
   }
 
   const disminuirCantidad = () => {
@@ -26,6 +31,7 @@ const CartObjet = ({producto}) => {
             <strong>Precio:</strong> {producto.precio}<br/>
 
             <strong>Cantidad:</strong> 
+
             <button className="changeCantidad" onClick={disminuirCantidad}>-</button> 
              {producto.cantidad} 
             <button className="changeCantidad" onClick={incrementarCantidad}>+</button><br/>
