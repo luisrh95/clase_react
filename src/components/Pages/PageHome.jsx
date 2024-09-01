@@ -1,6 +1,13 @@
 import { useState } from 'react'
 import FooterBar from './../footer/FooterBar.jsx'
 import { Link } from "react-router-dom"
+/*imagenes*/
+import ImagenNosotros from '../../images/nosotros.jpeg'
+
+import ImagenIMG_001 from '../../images/img_001.jpg'
+import ImagenIMG_002 from '../../images/img_002.jpeg'
+import ImagenIMG_003 from '../../images/img_003.jpeg'
+import ImagenIMG_004 from '../../images/img_004.jpeg'
 
 function PageHome(){
 
@@ -15,7 +22,7 @@ function PageHome(){
             
             <div>
               <div className="image-content">
-                  <img src="./src/images/nosotros.jpeg" title="Nosotros" alt="Nosotros"/>
+                  <img src={ImagenNosotros} title="Nosotros" alt="Nosotros"/>
               </div>
             </div>
             
@@ -84,17 +91,17 @@ function PageHome(){
             <div id="GaleriaProductos">
                 
                <div className="ImgPrincipal">
-                  <img src="././src/images/img_001.jpg" title="Imagen 0" alt="Imagen 0"/>
+                  <img src={ImagenIMG_001} title="Imagen 0" alt="Imagen 0"/>
                </div>
                
                <div className="GalleryImg1">
-                  <img src="./src/images/img_002.jpeg" title="Imagen 0" alt="Imagen 0"/>
+                  <img src={ImagenIMG_002} title="Imagen 0" alt="Imagen 0"/>
                </div>
                <div className="GalleryImg2">
-                  <img src="./src/images/img_003.jpeg" title="Imagen 0" alt="Imagen 0"/>
+                  <img src={ImagenIMG_003} title="Imagen 0" alt="Imagen 0"/>
                </div>
                <div className="GalleryImg3">
-                  <img src="./src/images/img_004.jpeg" title="Imagen 0" alt="Imagen 0"/>
+                  <img src={ImagenIMG_004} title="Imagen 0" alt="Imagen 0"/>
                </div>
                 
             </div>
