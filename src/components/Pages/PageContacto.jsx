@@ -12,10 +12,10 @@ function PageContacto(){
 
 <main>
 		
-        <section class="two backgroundHueso">
+        <section className="two backgroundHueso">
             
             <div>
-              <div class="image-content">
+              <div className="image-content">
                   <img src={ImagenContacto} title="Nosotros" alt="Nosotros"/>
               </div>
             </div>
@@ -24,7 +24,7 @@ function PageContacto(){
             <article>
              <h1>Contáctanos</h1>
              <p>
-              ¡Nos encantaría escucharte! En ForestWhispers, valoramos la conexión con nuestros clientes. Si tienes alguna pregunta, comentario o simplemente deseas compartir tu experiencia con nuestras velas, no dudes en contactarnos. Estamos aquí para ayudarte a iluminar tus momentos especiales con la magia de ForestWhispers. Puedes comunicarte con nosotros a través de nuestro correo electrónico o completar el formulario de contacto en nuestro sitio web. Estamos ansiosos por ser parte de tu experiencia aromática.		    <a class="button" href="#" title="">Hablemos por WhatsApp</a>
+              ¡Nos encantaría escucharte! En ForestWhispers, valoramos la conexión con nuestros clientes. Si tienes alguna pregunta, comentario o simplemente deseas compartir tu experiencia con nuestras velas, no dudes en contactarnos. Estamos aquí para ayudarte a iluminar tus momentos especiales con la magia de ForestWhispers. Puedes comunicarte con nosotros a través de nuestro correo electrónico o completar el formulario de contacto en nuestro sitio web. Estamos ansiosos por ser parte de tu experiencia aromática.		    <a className="button" href="#" title="">Hablemos por WhatsApp</a>
              </p>
             </article>
             </div>
@@ -35,14 +35,14 @@ function PageContacto(){
   
           
           
-       <section class="two MapaContent">
+       <section className="two MapaContent">
            
            <div>
             <article>
              <h2>Escríbenos</h2>
              <p>
               Tu opinión es invaluable para nosotros. Si tienes alguna sugerencia, comentario o simplemente deseas compartir tus pensamientos, escríbenos. En ForestWhispers, apreciamos la retroalimentación de nuestros clientes, ya que nos ayuda a mejorar y ofrecer productos que realmente satisfacen tus expectativas. Nuestro equipo está ansioso por recibir tus mensajes. Así que, no dudes en enviarnos un correo electrónico a la dirección proporcionada en nuestro sitio web. ¡Estamos aquí para ti y ansiosos por conocer tu historia con ForestWhispers!		   </p>
-             <div class="IframeMpas">
+             <div className="IframeMpas">
                  
               <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=medellin&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                  

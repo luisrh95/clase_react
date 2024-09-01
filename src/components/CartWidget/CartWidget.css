@@ -27,3 +27,13 @@ div.CartWidget img{
     padding: 2px;
     box-sizing: border-box;
 }
+@media screen and (max-width:850px){
+
+	/*CartWidget*/
+	div.CartWidget{
+		position: relative;
+		margin: 0px auto;
+		right: 0px;
+	}
+
+}
